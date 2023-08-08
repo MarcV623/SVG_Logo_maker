@@ -25,8 +25,7 @@ const questions = [
         type: 'input', 
         message: 'What is your shape color?',
         name: 'shape_color'
-    },
-    
+    }
 ]
 
 inquirer.prompt(questions).then((answers) => {
