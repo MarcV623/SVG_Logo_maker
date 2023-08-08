@@ -3,54 +3,30 @@ const inquirer = require('inquirer')
 const questions = [
     {
         type: 'input', 
-        message: 'What is your project title?',
-        name: 'title' 
+        message: 'What are your 3 text characters?',
+        name: 'text' 
     },
     {
         type: 'input', 
-        message: 'What does your project do?',
-        name: 'description'
-    },
-    {
-        type: 'input', 
-        message: 'What is your GitHub username?',
-        name: 'username'
-    },
-    {
-        type: 'input', 
-        message: 'What is your email address?',
-        name: 'email'
+        message: 'What is your text color?',
+        name: 'text_color'
     },
     {
         type: 'list', 
-        message: 'What license for your application will be used?',
-        name: 'license',
+        message: 'What shape are you using?',
+        name: 'shape',
         choices: [
-            'MIT',
-            'GPLv3',
-            'ISC'
+            'Square',
+            'Triangle',
+            'Circle'
         ]
     },
     {
         type: 'input', 
-        message: 'How is your project installed?',
-        name: 'installion'
+        message: 'What is your shape color?',
+        name: 'shape_color'
     },
-    {
-        type: 'input', 
-        message: 'How do you start your application?',
-        name: 'usage'
-    },
-    {
-        type: 'input', 
-        message: 'What are your contribution guidelines?',
-        name: 'contributing'
-    },
-    {
-        type: 'input', 
-        message: 'what are your test instructions?',
-        name: 'tests'
-    }
+    
 ]
 
 inquirer.prompt(questions).then((answers) => {
