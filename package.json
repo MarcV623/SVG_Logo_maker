@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MarcV623/SVG_Logo_maker/issues"
   },
-  "homepage": "https://github.com/MarcV623/SVG_Logo_maker#readme"
+  "homepage": "https://github.com/MarcV623/SVG_Logo_maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
