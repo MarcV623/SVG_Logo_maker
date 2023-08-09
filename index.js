@@ -10,10 +10,6 @@ const c = new Circle('mav', 'orange', 'pink')
 const s = new Square('ABC', 'yellow', 'pink')
 const t = new Triangle('XYZ', 'purple', 'brown')
 
-console.log(c.render())
-console.log(s.render())
-console.log(t.render())
-
 fs.writeFileSync('logo.svg', t.render())
 
 const questions = [
