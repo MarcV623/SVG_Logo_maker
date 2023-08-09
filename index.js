@@ -6,7 +6,7 @@ const Circle = require('./lib/circle')
 const Square = require('./lib/square')
 const Triangle = require('./lib/triangle')
 
-const c = new Circle('svg', 'blue', 'red')
+const c = new Circle('mav', 'orange', 'pink')
 const s = new Square('abc', 'yellow', 'pink')
 const t = new Triangle('xyz', 'purple', 'brown')
 
