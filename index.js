@@ -7,14 +7,14 @@ const Square = require('./lib/square')
 const Triangle = require('./lib/triangle')
 
 const c = new Circle('mav', 'orange', 'pink')
-const s = new Square('abc', 'yellow', 'pink')
+const s = new Square('ABC', 'yellow', 'pink')
 const t = new Triangle('xyz', 'purple', 'brown')
 
 console.log(c.render())
 console.log(s.render())
 console.log(t.render())
 
-fs.writeFileSync('logo.svg', c.render())
+fs.writeFileSync('logo.svg', s.render())
 
 const questions = [
     {
