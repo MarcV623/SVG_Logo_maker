@@ -1,5 +1,7 @@
 const inquirer = require('inquirer')
 
+const fs = require('fs')
+
 const Circle = require('./lib/circle')
 const Square = require('./lib/square')
 const Triangle = require('./lib/triangle')
@@ -11,6 +13,8 @@ const t = new Triangle('xyz', 'purple', 'brown')
 console.log(c.render())
 console.log(s.render())
 console.log(t.render())
+
+fs.writeFileSync('logo.svg', c.render())
 
 const questions = [
     {
