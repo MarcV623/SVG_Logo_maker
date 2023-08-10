@@ -6,12 +6,6 @@ const Circle = require('./lib/circle')
 const Square = require('./lib/square')
 const Triangle = require('./lib/triangle')
 
-const c = new Circle('mav', 'orange', 'pink')
-const s = new Square('ABC', 'yellow', 'pink')
-const t = new Triangle('XYZ', 'purple', 'brown')
-
-fs.writeFileSync('logo.svg', t.render())
-
 const questions = [
     {
         type: 'input', 
@@ -41,5 +35,19 @@ const questions = [
 ]
 
 inquirer.prompt(questions).then((answers) => {
-    console.log(answers)
+    let shape
+
+    if (answers.shape === 'Circle') {
+        shape = new Circle(answers.text, answers.text_color, answers.shape_color)
+    }
+
+    if (answers.shape === 'Square') {
+        shape = new Square(answers.text, answers.text_color, answers.shape_color)
+    }
+
+    if (answers.shape === 'Triangle') {
+        shape = new Triangle(answers.text, answers.text_color, answers.shape_color)
+    }
+
+    fs.writeFileSync('logo.svg', shape.render())
 })
